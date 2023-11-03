@@ -295,6 +295,11 @@ GLOBAL_LIST_INIT(followers_positions, list(
 	"Followers Robot",
 ))
 
+GLOBAL_LIST_INIT(castle_positions, list(
+	"Castle Castellan",
+	"Officer",
+))
+
 // job categories for rendering the late join menu
 GLOBAL_LIST_INIT(position_categories, list(
 	EXP_TYPE_NCR = list("jobs" = ncr_positions, "color" = "#ffeeaa"),
@@ -307,6 +312,7 @@ GLOBAL_LIST_INIT(position_categories, list(
 	EXP_TYPE_ENCLAVE = list("jobs" = enclave_positions, "color" = "#434944"),
 	EXP_TYPE_KHAN = list("jobs" = khan_positions, "color" = "#006666"),
 	EXP_TYPE_BIGHORN = list("jobs" = bighorn_positions, "color" = "#d7b088"),
+	EXP_TYPE_CASTLE = list("jobs" = castle_positions, "color" = "#f81717"),
 ))
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(
@@ -337,9 +343,13 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_SCRIBE = list("titles" = list("Scribe")),
 	EXP_TYPE_DECANUS = list("titles" = list("Legion Decanus")),
 
+	EXP_TYPE_CASTLE = list("titles" = castle_positions),
+
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Administrator")),
 	EXP_TYPE_NCRCOMMAND = list("titles" = list("NCR Lieutenant","NCR Sergeant First Class","NCR Captain", "NCR Veteran Ranger"))
 ))
+
+
 
 GLOBAL_LIST_INIT(exp_specialmap, list(
 	EXP_TYPE_LIVING = list(), // all living mobs

@@ -103,6 +103,7 @@
 	var/list/flw = list()
 	var/list/tribe = list()
 	var/list/was = list()
+	var/list/castle = list()
 	var/list/misc = list()
 	var/list/tri = list()
 	var/list/out = list()
@@ -163,8 +164,12 @@
 		if(rank in GLOB.outlaw_positions)
 			out[name] = rank
 			department = 1
+		if(rank in GLOB.castle_positions)
+			out[name] = rank
+			department = 1
 		if(!department && !(name in command))
 			misc[name] = rank
+
 	if(length(command))
 		dat += "<tr><th colspan=3>Leaders</th></tr>"
 		for(var/name in command)
@@ -217,6 +222,11 @@
 			even = !even
 	if(length(was))
 		dat += "<tr><th colspan=3>Wasteland</th></tr>"
+		for(var/name in was)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[was[name]]</td></tr>"
+			even = !even
+	if(length(castle))
+		dat += "<tr><th colspan=3>Castle</th></tr>"
 		for(var/name in was)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[was[name]]</td></tr>"
 			even = !even

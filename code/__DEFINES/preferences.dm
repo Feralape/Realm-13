@@ -74,7 +74,7 @@
 #define EXP_TYPE_BROTHERHOOD	"Bos"
 #define EXP_TYPE_NCR			"Ncr"
 #define EXP_TYPE_BIGHORN		"Bighorn"
-#define EXP_TYPE_LEGION			"Legion"
+#define EXP_TYPE_LEGION			"Skirts"
 #define EXP_TYPE_WASTELAND		"Wasteland"
 #define EXP_TYPE_ENCLAVE		"Enclave"
 #define EXP_TYPE_NCRCOMMAND     "NCRCommand"
@@ -85,6 +85,11 @@
 #define EXP_TYPE_FOLLOWERS		"FoA"
 #define EXP_TYPE_OUTLAW			"Outlaw"
 #define EXP_TYPE_KHAN			"Great Khans"
+
+//REALM13 stuff
+#define EXP_TYPE_REALM		"Realm"
+#define EXP_TYPE_CASTLE		"Castle"
+
 //Flags in the players table in the db
 #define DB_FLAG_EXEMPT 							(1<<0)
 #define DB_FLAG_AGE_CONFIRMATION_INCOMPLETE		(1<<1)

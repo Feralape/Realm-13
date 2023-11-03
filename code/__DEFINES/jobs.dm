@@ -11,6 +11,12 @@
 #define FACTION_FOLLOWERS "Followers"
 #define FACTION_KHAN "Great Khans"
 #define FACTION_TRIBAL "Tribals"
+#define FACTION_CASTLE "Castle"
+
+//Defines CLASSES
+#define CLASS_NOBLE "Nobles"
+#define CLASS_PEASANT "Peasants"
+
 
 #define ENGSEC			(1<<0)
 
@@ -187,6 +193,11 @@
 #define F13KHANSMITH (1<<3)
 #define F13KHANCOURT (1<<4)
 
+#define IMPERIAL	(1<<14)
+
+#define PEASANT (1<<0)
+#define CASTELLAN (1<<1)
+
 #define JOB_AVAILABLE 0
 #define JOB_UNAVAILABLE_GENERIC 1
 #define JOB_UNAVAILABLE_BANNED 2
@@ -315,3 +326,6 @@
 #define JOB_DISPLAY_ORDER_KHORCHIN 128
 #define JOB_DISPLAY_ORDER_KIPCHAK 129
 #define JOB_DISPLAY_ORDER_MANGUDAI 130
+
+#define JOB_DISPLAY_ORDER_PEASANT 131
+#define JOB_DISPLAY_ORDER_CASTELLAN 132
