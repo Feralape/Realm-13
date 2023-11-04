@@ -1,12 +1,9 @@
 {
 	"map_name": "Avendor",
-	"map_path": "map_files/Avendor",
+	"map_path": "map_files/realm",
 	"map_file": [
-		"Dungeon.dmm",
 		"Avendor-Lower.dmm",
-		"Avendor.dmm",
-		"Avendor-Upper.dmm",
-		"Avendor-Upper2.dmm"
+		"Avendor.dmm"
 	],
 	"station_ruin_budget":0,
 	"space_ruin_levels":0,
@@ -23,94 +20,16 @@
 			"Up": 1,
 			"No Parallax": true,
 			"Linkage" : null,
-			"Name": "Dungeons"
+			"Name": "Lower Avendor"
 		},
 		{
 			"Gravity": true,
 			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
-			"Dungeons": true,
 			"Up": 1,
 			"Down": 1,
 			"No Parallax": true,
 			"Linkage" : null,
-			"Name": "Lower Sheridan"
-		},
-		{
-			"Gravity": true,
-			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
-			"Station": 1,
-			"Surface": true,
-			"Up": 1,
-			"Down": 1,
-			"No Parallax": true,
-			"Linkage" : "Cross",
-			"Name": "Sheridan"
-		},
-		{
-			"Gravity": true,
-			"Baseturf": "/turf/open/transparent/openspace",
-			"Up": 1,
-			"Down": 1,
-			"No Parallax": true,
-			"Linkage" : null,
-			"Above": true,
-			"Name": "Upper Sheridan"
-		},
-		{
-			"Gravity": true,
-			"Baseturf": "/turf/open/transparent/openspace",
-			"Down": 1,
-			"Linkage" : null,
-			"No Parallax": true,
-			"Above": true,
-			"Name": "Upper Sheridan 2"
-		},
-		{
-			"Gravity": true,
-			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
-			"Station": 1,
-			"Surface": true,
-			"Up": 1,
-			"No Parallax": true,
-			"Linkage" : "Cross",
-			"Name": "Rock Springs"
-		},
-		{
-			"Gravity": true,
-			"Baseturf": "/turf/open/transparent/openspace",
-			"Down": 1,
-			"Linkage" : null,
-			"No Parallax": true,
-			"Above": true,
-			"Name": "Upper Rock Springs"
-		},
-		{
-			"Gravity": true,
-			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
-			"Station": 1,
-			"Surface": true,
-			"Up": 1,
-			"No Parallax": true,
-			"Linkage" : "Cross",
-			"Name": "Warren"
-		},
-		{
-			"Gravity": true,
-			"Baseturf": "/turf/open/transparent/openspace",
-			"Down": 1,
-			"Linkage" : null,
-			"No Parallax": true,
-			"Above": true,
-			"Name": "Upper Warren"
-		},
-		{
-			"Gravity": true,
-			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
-			"Station": 1,
-			"Surface": true,
-			"No Parallax": true,
-			"Linkage" : null,
-			"Name": "Mountain Range"
+			"Name": "Avendor"
 		}
 	],
 	"minetype": "none"

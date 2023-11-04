@@ -5,7 +5,7 @@
 
 /datum/map_config
 	// Metadata
-	var/config_filename = "_maps/pahrump.json"
+	var/config_filename = "_maps/Avendor.json"
 	var/defaulted = TRUE  // set to FALSE by LoadConfig() succeeding
 	// Config from maps.txt
 	var/config_max_users = 0
@@ -16,9 +16,9 @@
 
 
 	// Config actually from the JSON - should default to Box
-	var/map_name = "Rawlins, Wyoming"
-	var/map_path = "map_files/Pahrump-Sunset"
-	var/map_file = list("Dungeons.dmm", "Pahrump-Sunset-Lower.dmm", "Pahrump-Sunset.dmm", "Pahrump-Sunset-Upper.dmm", "Pahrump-Sunset-Upper-2.dmm", "RockSprings.dmm", "RockSprings-Upper.dmm", "Warren.dmm", "Warren-Upper.dmm", "Mountain-Range.dmm")
+	var/map_name = "Avendor"
+	var/map_path = "map_files/realm"
+	var/map_file = list("Avendor-Lower.dmm","Avendor.dmm")
 	var/list/added_jobs = list()     //Overrides the "none" faction using job name
 	var/list/removed_jobs = list()   //Removes the "none" faction using job name - can also use #all# (case sensitive)
 
@@ -44,9 +44,9 @@
 
 	var/allow_custom_shuttles = TRUE
 	var/shuttles = list(
-		"cargo" = "cargo_pahrump",
+		"cargo" = "cargo_avendor",
 		"ferry" = "ferry_fancy",
-		"emergency" = "emergency_pahrump")
+		"emergency" = "emergency_avendor")
 
 	var/year_offset = 540 //The offset of ingame year from the actual IRL year. You know you want to make a map that takes place in the 90's. Don't lie.
 
