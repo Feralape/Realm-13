@@ -161,7 +161,7 @@
 	. = ..()
 	AddComponent(/datum/component/largetransparency, y_size = 1)
 
-/obj/item/flag/ncr
+/*/obj/item/flag/ncr
 	name = "NCR flag"
 	desc = "A flag with a two headed bear, the symbol of the New California Republic."
 	icon_state = "ncrflag"
@@ -318,6 +318,7 @@
 				update_icon()
 	else
 		attack_hand(user)
+*/
 
 /obj/item/flag/attack_hand(mob/user)
 	if(!removing && item_state != "emptyflag")

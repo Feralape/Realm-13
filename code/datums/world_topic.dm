@@ -242,34 +242,17 @@
 /datum/world_topic/jsonmanifest/Run(list/input, addr)
 	var/list/whitelisted = list()
 	var/list/command = list()
-	var/list/ncr = list()
-	var/list/legion = list()
-	var/list/bighorn = list()
-	var/list/brotherhood = list()
-	var/list/wastelanders = list()
-	var/list/followers = list()
-	var/list/castle = list()
+	var/list/nobles = list()
+	var/list/commoners = list()
 	var/list/misc = list()
 	for(var/datum/data/record/R in GLOB.data_core.general)
 		var/name = R.fields["name"]
 		var/rank = R.fields["rank"]
 		var/real_rank = rank // make_list_rank(R.fields["real_rank"])
-		if(real_rank in GLOB.ncr_positions)
-			ncr[name] = rank
-		else if(real_rank in GLOB.followers_positions)
-			followers[name] = rank
-		else if(real_rank in GLOB.legion_positions)
-			legion[name] = rank
-		else if(real_rank in GLOB.bighorn_positions)
-			bighorn[name] = rank
-		else if(real_rank in GLOB.brotherhood_positions)
-			brotherhood[name] = rank
-		else if(real_rank in GLOB.command_positions)
-			command[name] = rank
-		else if(real_rank in GLOB.wasteland_positions)
-			wastelanders[name] = rank
-		else if(real_rank in GLOB.castle_positions)
-			castle[name] = rank
+		if(real_rank in GLOB.noble_positions)
+			nobles[name] = rank
+		else if(real_rank in GLOB.commoner_positions)
+			commoners[name] = rank
 		else
 			misc[name] = rank
 		// mixed departments, /datum/department when
@@ -278,14 +261,8 @@
 
 	. = list()
 	.["Command"] = command
-	.["New California Republic"] = ncr
-	.["Legion"] = legion
-	.["Followers"] = followers
-	.["Brotherhood of Steel"] = brotherhood
-	.["Bighorn"] = bighorn
-	.["Wastelanders"] = wastelanders
-	.["Other"] = misc
-	.["Castle"] = castle
+	.["Noble"] = nobles
+	.["Commoner"] = commoners
 	return json_encode(.)
 
 /datum/world_topic/jsonrevision

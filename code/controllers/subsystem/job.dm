@@ -13,7 +13,7 @@ SUBSYSTEM_DEF(job)
 	var/list/prioritized_jobs = list()
 	var/list/latejoin_trackers = list()	//Don't read this list, use GetLateJoinTurfs() instead
 
-	var/overflow_role = "Wastelander" //CHANGE
+	var/overflow_role = "Peasant" //CHANGE
 
 	var/list/level_order = list(JP_HIGH,JP_MEDIUM,JP_LOW)
 
@@ -490,7 +490,7 @@ SUBSYSTEM_DEF(job)
 			if(CONFIG_GET(flag/auto_deadmin_players) || (M.client.prefs?.toggles & DEADMIN_ALWAYS))
 				M.client.holder.auto_deadmin()
 			else
-				handle_auto_deadmin_roles(M.client, rank) 
+				handle_auto_deadmin_roles(M.client, rank)
 */
 
 	to_chat(M, "<b>You are the [rank].</b>")

@@ -94,7 +94,7 @@
 	recalculateChannels()
 
 /obj/item/radio/Destroy()
-	if(factionized) //fortuna addition. radio management.
+/*	if(factionized) //fortuna addition. radio management.
 		linked_mob = null
 		LAZYREMOVE(GLOB.faction_radios, src)
 		switch(linked_faction)
@@ -105,7 +105,7 @@
 			if(FACTION_BROTHERHOOD)
 				LAZYREMOVE(GLOB.bos_radios, src)
 			if(FACTION_ENCLAVE)
-				LAZYREMOVE(GLOB.enc_radios, src)
+				LAZYREMOVE(GLOB.enc_radios, src)*/
 	remove_radio_all(src) //Just to be sure
 	QDEL_NULL(wires)
 	QDEL_NULL(keyslot)
@@ -128,7 +128,7 @@
 /obj/item/radio/proc/Factionize()
 	if(factionized)
 		LAZYADD(GLOB.faction_radios, src)
-		switch(linked_faction)
+/*		switch(linked_faction)
 			if(FACTION_NCR)
 				LAZYADD(GLOB.ncr_radios, src)
 			if(FACTION_LEGION)
@@ -136,7 +136,7 @@
 			if(FACTION_BROTHERHOOD)
 				LAZYADD(GLOB.bos_radios, src)
 			if(FACTION_ENCLAVE)
-				LAZYADD(GLOB.enc_radios, src)
+				LAZYADD(GLOB.enc_radios, src)*/
 
 /obj/item/radio/ComponentInitialize()
 	. = ..()

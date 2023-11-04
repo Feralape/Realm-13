@@ -50,7 +50,7 @@
 	frequency = FREQ_VAULT
 	freerange = TRUE
 	freqlock = TRUE
-
+/*
 /obj/item/radio/headset/headset_ncr
 	name = "NCR radio headset"
 	desc = "This is used by the New California Republic.\nTo access the NCR channel, use :w."
@@ -137,7 +137,7 @@
 	linked_faction = FACTION_ENCLAVE
 	factionized = TRUE
 	command = TRUE
-
+*/
 /obj/item/radio/headset/headset_khans
 	name = "khan radio headset"
 	desc = "This is used by the Khans.\nTo access the Khan channel, use :h."

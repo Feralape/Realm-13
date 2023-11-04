@@ -4,7 +4,7 @@ AI
 /datum/job/ai
 	title = "AI"
 	flag = AI_JF
-	department_flag = VAULT
+	department_flag = ENGSEC
 	//
 	total_positions = 1
 	spawn_positions = 1
@@ -78,7 +78,7 @@ Cyborg
 */
 /datum/job/cyborg
 	title = "Cyborg"
-	flag = F13CYBORG
+	flag = CYBORG
 	department_flag = ENGSEC
 	total_positions = 0
 	spawn_positions = 0
@@ -88,7 +88,7 @@ Cyborg
 	selection_color = "#ddffdd"
 	minimal_player_age = 21
 	exp_requirements = 300
-	exp_type = EXP_TYPE_FALLOUT
+	exp_type = EXP_TYPE_SILICON
 
 /datum/job/cyborg/equip(mob/living/carbon/human/H, visualsOnly = FALSE, announce = TRUE, latejoin = FALSE, datum/outfit/outfit_override = null, client/preference_source)
 	return H.Robotize(FALSE, latejoin)
@@ -98,22 +98,3 @@ Cyborg
 	ADD_TRAIT(R, TRAIT_TECHNOPHREAK, TRAIT_GENERIC)
 	R.apply_pref_name("cyborg", M.client)
 	R.gender = NEUTER
-
-/*
-Mr. Handy
-*/
-/datum/job/handy
-	title = "Mr. Handy"
-	flag = CYBORG
-	department_flag = ENGSEC
-	//
-	total_positions = 0
-	spawn_positions = 1
-	supervisors = "Your Creators"	//Nodrak
-	selection_color = "#ddffdd"
-	minimal_player_age = 21
-	exp_requirements = 6000
-	exp_type = EXP_TYPE_CREW
-
-/datum/job/handy/equip(mob/living/carbon/human/H, visualsOnly = FALSE, announce = TRUE, latejoin = FALSE, datum/outfit/outfit_override = null, client/preference_source)
-	return H.Robotize(FALSE, latejoin)

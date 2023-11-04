@@ -30,14 +30,14 @@
 	exotic_blood_color = BLOOD_COLOR_OIL
 	species_type = "robotic"
 
-/datum/species/gen2synth/qualifies_for_rank(rank, list/features)
+/*/datum/species/gen2synth/qualifies_for_rank(rank, list/features)
 	if(rank in GLOB.legion_positions) //Not sure on this one, are the Legion a fan of sentient robots?
 		return 0
 	if(rank in GLOB.brotherhood_positions) //Kill it with fire.
 		return 0
 	if(rank in GLOB.vault_positions) //How did they even get in??.
 		return 0
-	return ..()
+	return ..()*/
 
 /obj/item/bodypart/chest/synth
 	name = "synthetic chest"

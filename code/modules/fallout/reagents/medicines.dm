@@ -23,12 +23,6 @@
 
 /datum/reagent/medicine/stimpak/on_mob_add(mob/living/M)
 	. = ..()
-	if(M.mind)
-		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-		if(istype(job))
-			switch(job.faction)
-				if(FACTION_LEGION)
-					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 
 /datum/reagent/medicine/stimpak/on_mob_life(mob/living/carbon/M)
 	if(M.health < 0)					//Functions as epinephrine.
@@ -97,12 +91,6 @@
 
 /datum/reagent/medicine/super_stimpak/on_mob_add(mob/living/M)
 	. = ..()
-	if(M.mind)
-		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-		if(istype(job))
-			switch(job.faction)
-				if(FACTION_LEGION)
-					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 
 /datum/reagent/medicine/super_stimpak/on_mob_life(mob/living/M)
 	if(M.health < 0)					//Functions as epinephrine.
@@ -430,12 +418,6 @@
 	M.AdjustUnconscious(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.adjustStaminaLoss(-5*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
 	..()
-	if(M.mind)
-		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-		if(istype(job))
-			switch(job.faction)
-				if(FACTION_LEGION)
-					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 	. = TRUE
 
 /datum/reagent/medicine/medx/overdose_process(mob/living/carbon/human/M)

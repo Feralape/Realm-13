@@ -35,7 +35,7 @@ GLOBAL_LIST_EMPTY(enc_radios)
 	dat += "<head><style>body {padding: 0; margin: 15px; background-color: #062113; color: #4aed92; line-height: 170%;} a, button, a:link, a:visited, a:active, .linkOn, .linkOff {color: #4aed92; text-decoration: none; background: #062113; border: none; padding: 1px 4px 1px 4px; margin: 0 2px 0 0; cursor:default;} a:hover {color: #062113; background: #4aed92; border: 1px solid #4aed92} a.white, a.white:link, a.white:visited, a.white:active {color: #4aed92; text-decoration: none; background: #4aed92; border: 1px solid #161616; padding: 1px 4px 1px 4px; margin: 0 2px 0 0; cursor:default;} a.white:hover {color: #062113; background: #4aed92;} .linkOn, a.linkOn:link, a.linkOn:visited, a.linkOn:active, a.linkOn:hover {color: #4aed92; background: #062113; border-color: #062113;} .linkOff, a.linkOff:link, a.linkOff:visited, a.linkOff:active, a.linkOff:hover{color: #4aed92; background: #062113; border-color: #062113;}</style></head><font face='courier'>"
 	dat += "<center><b>ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM v.85</b><br>"
 	dat += "<b>COPYRIGHT 2075-2077 ROBCO INDUSTRIES</b><br><br><br><br>"
-	switch(assigned_faction)
+/*	switch(assigned_faction)
 		if(FACTION_NCR)
 			for(var/obj/item/radio/radio in GLOB.ncr_radios)
 				if(radio.linked_mob)
@@ -51,7 +51,7 @@ GLOBAL_LIST_EMPTY(enc_radios)
 		if(FACTION_ENCLAVE)
 			for(var/obj/item/radio/radio in GLOB.enc_radios)
 				if(radio.linked_mob)
-					dat += "<a href='?src=[REF(src)];terminate=[REF(radio)]'> [radio.name] linked to [radio.linked_mob]<br>"
+					dat += "<a href='?src=[REF(src)];terminate=[REF(radio)]'> [radio.name] linked to [radio.linked_mob]<br>"*/
 	var/datum/browser/popup = new(user, "radio_console", "Radio Terminal")
 	popup.set_content(dat)
 	popup.open()
@@ -64,20 +64,6 @@ GLOBAL_LIST_EMPTY(enc_radios)
 		return
 	usr.set_machine(src)
 	add_fingerprint(usr)
-	if(href_list["terminate"])
-		var/obj/item/radio/terminate = locate(href_list["terminate"]) in GLOB.faction_radios
-		if(terminate.factionized && terminate.linked_mob && terminate.linked_faction == assigned_faction)
-			terminate.kill_switch()
-			switch(assigned_faction)
-				if(FACTION_NCR)
-					LAZYREMOVE(GLOB.ncr_radios, terminate)
-				if(FACTION_LEGION)
-					LAZYREMOVE(GLOB.legion_radios, terminate)
-				if(FACTION_BROTHERHOOD)
-					LAZYREMOVE(GLOB.bos_radios, terminate)
-				if(FACTION_ENCLAVE)
-					LAZYREMOVE(GLOB.enc_radios, terminate)
-	updateUsrDialog()
 	return
 
 /obj/machinery/radioterminal/attackby(obj/item/O, mob/user, params)
@@ -107,7 +93,7 @@ GLOBAL_LIST_EMPTY(enc_radios)
 			new_radio.kill_switched = FALSE
 			new_radio.Factionize()
 		return
-
+/*
 /obj/machinery/radioterminal/ncr
 	name = "NCR radio control"
 	assigned_faction = FACTION_NCR
@@ -127,3 +113,4 @@ GLOBAL_LIST_EMPTY(enc_radios)
 	name = "Enclave radio control"
 	assigned_faction = FACTION_ENCLAVE
 	req_one_access = list(ACCESS_ENCLAVE_COMMAND)
+*/

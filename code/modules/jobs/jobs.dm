@@ -15,6 +15,9 @@ GLOBAL_LIST_INIT(medical_positions, list(
 	"Chemist",
 	))
 
+GLOBAL_LIST_INIT(security_positions, list(
+	))
+
 
 GLOBAL_LIST_INIT(science_positions, list(
 	"Research Director",
@@ -49,305 +52,36 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 	))
 
 GLOBAL_LIST_INIT(command_positions, list(
-	"Baron",
-	"Castellan",
-	"Knight-Commander",
-	"Keeper",
+	))
 
-	"NCR Captain",
-	"NCR Veteran Ranger",
-
-	"Legion Centurion",
-
-	"Sheriff",
-	"Sierra Representative",
-	"Mayor",
-
-	"Enclave Lieutenant",
-
-	"Followers Administrator",
-
-	"Khan Senior Enforcer",
-
-	"Tribal Shaman",
-
-	"Raider Captain",
-
-//	"Noyan",
-//	"Steward",
+GLOBAL_LIST_INIT(noble_positions, list(
+	"Castle Castellan",
 	))
 
 GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
-"Mr. Handy"))
+	))
 //Whitelisted positions list FO13 anything that shows up here requires that the user have an entry in the 'role_whitelist' table of id,ckey,"faction"
 //NCR Assistant and Legion Camp Follower re-added to whitelisting.  BoS Initiate removed from whitelist.
 
 GLOBAL_LIST_INIT(faction_whitelist_positions, list(
-"Baron",
-"Castellan",
-"Knight-Commander",
-"Keeper",
-"Paladin Marshal",
-"Paladin",
-"Knight-Captain",
-"Knight",
-"Librarian",
-"Scribe",
-"Initiate",
-"BoS Off-Duty",
-"Inquisitorial Acolyte",
-
-"Legion Centurion",
-"Legion Venator",
-"Legion Explorer",
-"Legion Slavemaster",
-"Legion Veteran Decanus",
-"Veteran Legionnaire",
-"Legion Prime Decanus",
-"Prime Legionnaire",
-"Legion Recruit Decanus",
-"Legion Scout",
-"Legion Auxilia",
-"Legion Slave",
-
-"Shopkeeper",
-"Sierra Representative",
-"Mercenary",
-
-"Enclave Lieutenant",
-"Enclave Gunnery Sergeant",
-"Enclave Sergeant",
-"Enclave Internal Security",
-"Enclave Specialist",
-"Enclave Scientist",
-"Enclave Private",
-"Enclave Pilot Officer",
-"Enclave Bunker Duty",
-"Synthetic",
-
-"Noyan",
-"Steward",
-"Kheshig",
-"Khorchin",
-"Kipchak",
-
-"Raider",
-"Outsider",
-"Raider Captain",
-
-"Followers Administrator",
-"Followers Doctor",
-"Followers Scholar",
-"Followers Robot",
-
-"Cyborg",
-))
-
-GLOBAL_LIST_INIT(brotherhood_positions, list(
-	"Baron",
-	"Castellan",
-	"Knight-Commander",
-	"Keeper",
-	"Paladin Marshal",
-	"Paladin",
-	"Knight-Captain",
-	"Knight",
-	"Librarian",
-	"Scribe",
-	"BoS Off-Duty",
-	"Initiate",
-	"Inquisitorial Acolyte",
-))
-
-GLOBAL_LIST_INIT(bighorn_positions, list(
-	"Mayor",
-	"Secretary",
-	"Sheriff",
-	"Deputy",
-	"Sierra Representative",
-	"Shopkeeper",
-	"Mercenary",
-	"Barkeep",
-	"Preacher",
-	"Citizen",
-
-))
-
-GLOBAL_LIST_INIT(legion_command_positions, list(
-	"Legate",
-	"Legion Orator",
-	"Legion Centurion",
-	"Legion Veteran Decanus",
-))
-
-GLOBAL_LIST_INIT(legion_positions, list(
-	"Legion Orator",
-	"Legion Centurion",
-	"Legion Venator",
-	"Legion Veteran Decanus",
-	"Legion Prime Decanus",
-	"Legion Recruit Decanus",
-	"Legion Vexillarius",
-	"Legion Explorer",
-	"Legion Scout",
-	"Veteran Legionnaire",
-	"Prime Legionnaire",
-	"Recruit Legionnaire",
-	"Legion Forgemaster",
-	"Legion Immune",
-	"Legion Auxilia",
-	"Legion Slave",
-	"Legion Slavemaster"
-))
-
-GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
-	"NCR Veteran Ranger",
-))
-
-GLOBAL_LIST_INIT(ncr_positions, list(
-	"NCR Captain",
-	"NCR Lieutenant",
-	"NCR Veteran Ranger",
-	"NCR Representative",
-	"NCR Ranger",
-	"NCR Sergeant First Class",
-	"NCR Heavy Trooper",
-	"NCR Military Police",
-	"NCR Senior Enlisted Advisor",
-	"NCR Sergeant",
-	"NCR Corporal",
-	"NCR Combat Medic",
-	"NCR Combat Engineer",
-	"NCR Trooper",
-	"NCR Conscript",
-	"NCR Medical Officer",
-	"NCR Logistics Officer",
-	"NCR Rear Echelon",
-))
-
-GLOBAL_LIST_INIT(vault_positions, list(
-	"Cyborg",
-))
-
-GLOBAL_LIST_INIT(wasteland_positions, list(
-	"Vigilante",
-	"Wastelander",
-))
-
-GLOBAL_LIST_INIT(tribal_positions, list(
-	"Tribal",
-	"Tribal Hunter",
-	"Tribal Gatherer",
-	"Tribal Shaman",
-))
-
-GLOBAL_LIST_INIT(outlaw_positions, list(
-	"Raider",
-	"Outsider",
-	"Raider Captain",
-))
-
-/*
-GLOBAL_LIST_INIT(khan_positions, list(
-	"Noyan",
-	"Steward",
-	"Kheshig",
-	"Khorchin",
-	"Kipchak",
-	"Mangudai",
-))
-*/
-GLOBAL_LIST_INIT(khan_positions, list(
-	"Khan Senior Enforcer",
-	"Khan Enforcer",
-	"Khan Chemist",
-	"Khan Smith",
-	"Khan Courtesan",
-))
-
-GLOBAL_LIST_INIT(enclave_positions, list(
-	"Enclave Lieutenant",
-	"Enclave Platoon Sergeant",
-	"Enclave Sergeant",
-	"Enclave Internal Security",
-	"Enclave Specialist",
-	"Enclave Scientist",
-	"Enclave Pilot Officer",
-	"Enclave Private",
-	"Enclave Bunker Duty",
-	"Synthetic",
-))
-
-GLOBAL_LIST_INIT(security_positions, list(
-	"Vault-tec Security",
-	"Officer",
-))
-GLOBAL_LIST_INIT(silicon_positions, list(
-	"Mr. Handy",
-))
-
-GLOBAL_LIST_INIT(followers_positions, list(
-	"Followers Administrator",
-	"Followers Doctor",
-	"Followers Scholar",
-	"Followers Volunteer",
-	"Followers Scientist",
-	"Followers Robot",
-))
-
-GLOBAL_LIST_INIT(castle_positions, list(
 	"Castle Castellan",
-	"Officer",
-))
+	))
+
+
+GLOBAL_LIST_INIT(commoner_positions, list(
+	"Peasant",
+	))
 
 // job categories for rendering the late join menu
 GLOBAL_LIST_INIT(position_categories, list(
-	EXP_TYPE_NCR = list("jobs" = ncr_positions, "color" = "#ffeeaa"),
-	EXP_TYPE_FOLLOWERS = list("jobs" = followers_positions, "color" = "#ffeeaa"),
-	EXP_TYPE_BROTHERHOOD = list("jobs" = brotherhood_positions, "color" = "#95a5a6"),
-	EXP_TYPE_LEGION = list("jobs" = legion_positions, "color" = "#f81717"),
-	EXP_TYPE_WASTELAND = list("jobs" = wasteland_positions, "color" = "#5a5a5a"),
-	EXP_TYPE_TRIBAL = list("jobs" = tribal_positions, "color" = "#825b73"),
-	EXP_TYPE_OUTLAW = list("jobs" = outlaw_positions, "color" = "#db3529"),
-	EXP_TYPE_ENCLAVE = list("jobs" = enclave_positions, "color" = "#434944"),
-	EXP_TYPE_KHAN = list("jobs" = khan_positions, "color" = "#006666"),
-	EXP_TYPE_BIGHORN = list("jobs" = bighorn_positions, "color" = "#d7b088"),
-	EXP_TYPE_CASTLE = list("jobs" = castle_positions, "color" = "#f81717"),
-))
+	EXP_TYPE_NOBLE = list("jobs" = noble_positions, "color" = "#f81717"),
+	EXP_TYPE_COMMONER = list("jobs" = commoner_positions, "color" = "#f81717"),
+	))
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(
-	EXP_TYPE_CREW = list("titles" = command_positions | engineering_positions | medical_positions | science_positions | supply_positions | security_positions | civilian_positions | list("AI","Cyborg")), // crew positions
-	EXP_TYPE_COMMAND = list("titles" = command_positions),
-	EXP_TYPE_ENGINEERING = list("titles" = engineering_positions),
-	EXP_TYPE_MEDICAL = list("titles" = medical_positions),
-	EXP_TYPE_SCIENCE = list("titles" = science_positions),
-	EXP_TYPE_SUPPLY = list("titles" = supply_positions),
-	EXP_TYPE_SECURITY = list("titles" = security_positions),
-	EXP_TYPE_SILICON = list("titles" = list("AI","Cyborg")),
-	EXP_TYPE_SERVICE = list("titles" = civilian_positions),
-
-	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | bighorn_positions | legion_positions | khan_positions | ncr_positions | vault_positions | wasteland_positions | tribal_positions | outlaw_positions | followers_positions | enclave_positions),
-
-	EXP_TYPE_OUTLAW = list("titles" = outlaw_positions),
-	EXP_TYPE_TRIBAL = list("titles" = tribal_positions),
-	EXP_TYPE_BROTHERHOOD = list("titles" = brotherhood_positions),
-	EXP_TYPE_BIGHORN = list("titles" = bighorn_positions),
-	EXP_TYPE_LEGION = list("titles" = legion_positions),
-	EXP_TYPE_NCR = list("titles" = ncr_positions),
-	EXP_TYPE_VAULT = list("titles" = vault_positions),
-	EXP_TYPE_WASTELAND = list("titles" = wasteland_positions),
-	EXP_TYPE_KHAN = list("titles" = khan_positions),
-	EXP_TYPE_FOLLOWERS = list("titles" = followers_positions),
-	EXP_TYPE_ENCLAVE = list("titles" = enclave_positions),
-	EXP_TYPE_RANGER = list("titles" = list("NCR Veteran Ranger","NCR Ranger")),
-	EXP_TYPE_SCRIBE = list("titles" = list("Scribe")),
-	EXP_TYPE_DECANUS = list("titles" = list("Legion Decanus")),
-
-	EXP_TYPE_CASTLE = list("titles" = castle_positions),
-
-	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Administrator")),
-	EXP_TYPE_NCRCOMMAND = list("titles" = list("NCR Lieutenant","NCR Sergeant First Class","NCR Captain", "NCR Veteran Ranger"))
-))
+	EXP_TYPE_NOBLE = list("titles" = noble_positions),
+	EXP_TYPE_COMMONER = list("titles" = commoner_positions),
+	))
 
 
 
@@ -356,7 +90,7 @@ GLOBAL_LIST_INIT(exp_specialmap, list(
 	EXP_TYPE_ANTAG = list(),
 	EXP_TYPE_SPECIAL = list("Lifebringer","Ash Walker","Exile","Servant Golem","Free Golem","Hermit","Translocated Vet","Escaped Prisoner","Hotel Staff","SuperFriend","Space Syndicate","Ancient Crew","Space Doctor","Space Bartender","Beach Bum","Skeleton","Zombie","Space Bar Patron","Lavaland Syndicate","Ghost Role", "Ghost Cafe Visitor"), // Ghost roles
 	EXP_TYPE_GHOST = list() // dead people, observers
-))
+	))
 GLOBAL_PROTECT(exp_jobsmap)
 GLOBAL_PROTECT(exp_specialmap)
 

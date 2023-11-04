@@ -61,12 +61,12 @@
 		b.max_damage = initial(b.max_damage)
 		b.wound_resistance = initial(b.wound_resistance)
 
-/datum/species/ghoul/qualifies_for_rank(rank, list/features)
+/*/datum/species/ghoul/qualifies_for_rank(rank, list/features)
 	if(rank in GLOB.legion_positions) /* legion HATES these ghoul */
 		return 0
 	if(rank in GLOB.vault_positions) //purest humans left in america. supposedly.
 		return 0
-	return ..()
+	return ..()*/
 
 /datum/species/ghoul/handle_chemicals(datum/reagent/chem, mob/living/carbon/human/H)
 	if(istype(chem) && !chem.ghoulfriendly)
