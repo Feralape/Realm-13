@@ -11,12 +11,13 @@
 
 // please make sure they're sorted alphabetically and categorized
 
+/*
 /datum/sprite_accessory/underwear/socks/socks_knee
 	name = "Knee-high"
 	icon_state = "socks_knee"
 	has_color = TRUE
 
-/*
+
 /datum/sprite_accessory/underwear/socks/bee_knee
 	name = "Knee-high - Bee"
 	icon_state = "bee_knee"
@@ -49,25 +50,23 @@
 	name = "Knee-high - Striped"
 	icon_state = "striped_knee"
 	has_color = TRUE
-*/
+
 
 /datum/sprite_accessory/underwear/socks/thin_knee
 	name = "Knee-high - Thin"
 	icon_state = "thin_knee"
 	has_color = TRUE
 
-/*
+
 /datum/sprite_accessory/underwear/socks/uk_knee
 	name = "Knee-High - UK"
 	icon_state = "uk_knee"
-*/
 
 /datum/sprite_accessory/underwear/socks/socks_norm
 	name = "Normal"
 	icon_state = "socks_norm"
 	has_color = TRUE
 
-/*
 /datum/sprite_accessory/underwear/socks/bee_norm
 	name = "Normal - Bee"
 	icon_state = "bee_norm"
@@ -83,7 +82,6 @@
 /datum/sprite_accessory/underwear/socks/candycaneg_norm
 	name = "Normal - Green Candy Cane"
 	icon_state = "candycaneg_norm"
-*/
 
 /datum/sprite_accessory/underwear/socks/pantyhose
 	name = "Pantyhose"
@@ -94,7 +92,6 @@
 	icon_state = "socks_short"
 	has_color = TRUE
 
-/*
 /datum/sprite_accessory/underwear/socks/stockings_blue
 	name = "Stockings - Blue"
 	icon_state = "stockings_blue"
@@ -114,13 +111,11 @@
 /datum/sprite_accessory/underwear/socks/stockings_orange
 	name = "Stockings - Orange"
 	icon_state = "stockings_orange"
-*/
 
 /datum/sprite_accessory/underwear/socks/stockings_programmer
 	name = "Stockings - Programmer"
 	icon_state = "stockings_lpink"
 
-/*
 /datum/sprite_accessory/underwear/socks/stockings_purple
 	name = "Stockings - Purple"
 	icon_state = "stockings_purple"
@@ -128,14 +123,12 @@
 /datum/sprite_accessory/underwear/socks/stockings_yellow
 	name = "Stockings - Yellow"
 	icon_state = "stockings_yellow"
-*/
 
 /datum/sprite_accessory/underwear/socks/socks_thigh
 	name = "Thigh-high"
 	icon_state = "socks_thigh"
 	has_color = TRUE
 
-/*
 /datum/sprite_accessory/underwear/socks/bee_thigh
 	name = "Thigh-high - Bee"
 	icon_state = "bee_thigh"
@@ -147,18 +140,14 @@
 /datum/sprite_accessory/underwear/socks/commie_thigh
 	name = "Thigh-high - Commie"
 	icon_state = "commie_thigh"
-*/
 
 /datum/sprite_accessory/underwear/socks/fishnet
 	name = "Thigh-high - Fishnet"
 	icon_state = "fishnet"
 
-/*
 /datum/sprite_accessory/underwear/socks/usa_thigh
 	name = "Thigh-high - Freedom"
 	icon_state = "assblastusa_thigh"
-
-*/
 
 /datum/sprite_accessory/underwear/socks/rainbow_thigh
 	name = "Thigh-high - Rainbow"
@@ -183,7 +172,6 @@
 	icon_state = "thin_thigh"
 	has_color = TRUE
 
-/*
 /datum/sprite_accessory/underwear/socks/uk_thigh
 	name = "Thigh-high - UK"
 	icon_state = "uk_thigh"

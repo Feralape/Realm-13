@@ -3332,6 +3332,7 @@
 #include "code\modules\Realm13\start_landmarks.dm"
 #include "code\modules\Realm13\turfs\R13_floors.dm"
 #include "code\modules\Realm13\turfs\R13ground.dm"
+#include "code\modules\Realm13\turfs\closed\realmwalls.dm"
 #include "code\modules\recycling\conveyor2.dm"
 #include "code\modules\recycling\sortingmachinery.dm"
 #include "code\modules\recycling\disposal\bin.dm"
