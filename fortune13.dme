@@ -3332,6 +3332,8 @@
 #include "code\modules\Realm13\start_landmarks.dm"
 #include "code\modules\Realm13\objs\structures\barricades.dm"
 #include "code\modules\Realm13\objs\structures\doors.dm"
+#include "code\modules\Realm13\objs\structures\farm.dm"
+#include "code\modules\Realm13\objs\tools\farming.dm"
 #include "code\modules\Realm13\turfs\R13_floors.dm"
 #include "code\modules\Realm13\turfs\R13ground.dm"
 #include "code\modules\Realm13\turfs\closed\realmwalls.dm"
